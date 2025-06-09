@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header>
+    <h1>Animal Gallery</h1>
+  </header>
+  <div class="container">
+
+    <!-- ✅ Filter Buttons -->
+    <div id="filter-buttons">
+      <button class="active" data-filter="all">Show all</button>
+      <button data-filter="mamalia">Mammals</button>
+      <button data-filter="reptile">Reptiles</button>
+      <button data-filter="fish">Fish</button>
+      <button data-filter="birds">Birds</button>
+    </div>
+
+    <!-- ✅ Cards Section -->
+    <div id="filterable-cards" style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <div class="card show" data-name="mamalia">
+        <img src="animal/Banteng/Banteng.jpg" alt="Banteng" width="400" data-sound="animal/Banteng/banteng.mp3">
+        <h6>Banteng</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/BlackShrew/BlackShrew.png" alt="Black Shrew" width="400" data-sound="animal/BlackShrew/Shrew Sounds.mp3">
+        <h6>Black Shrew</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/MalayanTapir/tapir.png" alt="Malayan Tapir" width="400" data-sound="animal/MalayanTapir/Malayan tapir sounds.mp3">
+        <h6>Malayan Tapir</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/MalayanTiger/MT.png" alt="Malayan Tiger" width="400" data-sound="animal/MalayanTiger/Malayan Tiger Sound Effects.mp3">
+        <h6>Malayan Tiger</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/ProboscisMonkey/PM.jpg" alt="Proboscis Monkey" width="400" data-sound="animal/ProboscisMonkey/The sound of a proboscis monkey.mp3">
+        <h6>Proboscis Monkey</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/borneonpygmyelephant/be.png" alt="Bornean Pygmy Elephant" width="400" data-sound="animal/borneonpygmyelephant/Borneo Pygmy Elephant Sound Effects.mp3">
+        <h6>Bornean Pygmy Elephant</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/SumatranElephant/se.jpg" alt="Sumatran Elephant" width="400" data-sound="animal/Sumatran Elephant/Sumatran Elephant Sound Effects.mp3">
+        <h6>Sumatran Elephant</h6>
+        </div>
+
+        <div class="card show" data-name="mamalia">
+        <img src="animal/BorneanOrangutan/BO.png" alt="Bornean Orangutan" width="400" data-sound="animal/BorneanOrangutan/Orangutan sounds.mp3">
+        <h6>Bornean Orangutan</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/cloudedleapord/cl.jpg" alt="Clouded Leapord" width="400" data-sound="animal/clouded leapord/Clouded leopard sounds.mp3">
+        <h6>Clouded Leapord</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/gaur/gaur.jpg" alt="Gaur" width="400" data-sound="animal/gaur/gaur sounds.mp3">
+        <h6>Gaur</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/malayansunbear/malayansunbear.jpg" alt="Malayan Sunbear" width="400" data-sound="animal/malayansunbear/Malayan Sun Bear Sound Effects.mp3">
+        <h6>Malayan Sunbear</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/flatheadedcat/fhc.png" alt="Flat Headed Cat" width="400" data-sound="animal/flatheadedcat/Cat Meowing - Sound Effect - Download.mp3">
+        <h6>Flat Headed Cat</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/SundaPangolin/tenggiling.png" alt="Sunda Pangolin" width="400" data-sound="animal/SundaPangolin/Pangolin Sound Effects.mp3">
+        <h6>Sunda Pangolin</h6>
+      </div>
+
+      <div class="card show" data-name="mamalia">
+        <img src="animal/SumatranRhinoceros/SR.png" alt="Sumatran Rhinoceros" width="400" data-sound="animal/SumatranRhinoceros/Sumatran rhinoceros sounds.mp3">
+        <h6>Sumatran Rhinoceros</h6>
+      </div>
+
+      <div class="card show" data-name="reptile">
+        <img src="animal/riverterappin/srt.png" alt="River Terappin" width="400" data-sound="animal/riverterappin/Turtle Sound Effects.mp3">
+        <h6>River Terrapin</h6>
+      </div>
+
+      <div class="card show" data-name="reptile">
+        <img src="animal/paintedterappin/pt.png" alt="Painted Terrapin" width="400" data-sound="animal/paintedterappin/Turtle Sound.mp3">
+        <h6>Rhinoceros Hornbill</h6>
+      </div>
+
+      <div class="card show" data-name="reptile">
+        <img src="animal/MalaysianGiantTurtle/mgt.jpg" alt="Malaysian Giant turtle" width="400" data-sound="animal/MalaysianGiantTurtle/Malaysian giant turtle Orlitia borneensis.mp3">
+        <h6>Malaysian Giant Turtle</h6>
+      </div>
+
+      <div class="card show" data-name="fish">
+        <img src="animal/giantgrouper/gg.jpg" alt="Giant Grouper" width="400" data-sound="animal/giantgrouper/Sea Waves - Sound Effect.mp3">
+        <h6>Giant Grouper</h6>
+      </div>
+
+      <div class="card show" data-name="birds">
+        <img src="animal/RhinocerosHornbill/rh.jpg" alt="Rhinoceros Hornbill" width="400" data-sound="animal/RhinocerosHornbill/Rhinoceros Hornbill  Natural Sound Effects.mp3">
+        <h6>Rhinoceros Hornbill</h6>
+      </div>
+
+      <div class="card show" data-name="birds">
+        <img src="animal/milkystork/ms.jpg" alt="Milky Stork" width="400" data-sound="animal/milkystork/Stork - Sound Effect  ProSounds.mp3">
+        <h6>Milky Stork</h6>
+      </div>
+
+      <!-- Add remaining cards similarly -->
+    </div>
+  </div>
+
+   <div id="transition-overlay"></div>
+  <script src="gallery.js"></script>
+</body>
+</html>

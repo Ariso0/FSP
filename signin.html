@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" type="image/png" href="logo.jpg" sizes="64x64">
+    <link rel="stylesheet" href="signin.css">
+    </head>
+    <body>
+        <header>
+        <h1>GET INVOLVED</h1>
+        <p>Join our mission to protect endangered species.</p>            
+        </header>
+
+    <div class="mcontainer">
+        <div class="form-box box">
+            <h2>Volunteer Registration</h2>
+            <form>
+                <label>Full Name</label>
+                <br>
+                <input style="width: 98%" type="text" name="full_name" required>
+                <br>
+                <br>
+                <label>Email</label>
+                <br>
+                <input style="width: 98%" type="email" name="email" required>
+                <br>
+                <br>
+                <label>Phone Number</label>
+                <br>
+                <input style="width: 98%" type="tel" name="phone_number" required>    
+                <br>
+                <br>
+                <label>Prefered Volunteering Activity</label>
+                <br>
+                <select name="activity" required>
+                    <option value="">Select Activity</option>
+                    <option value="education">Education</option>
+                    <option value="fundraising">Fundraising</option>
+                    <option value="animal_care">Animal Care</option>
+                </select>
+                <br>
+                <br>
+                <label>Availability</label>
+                <br>
+                <br>
+                <input type="checkbox" name="availability" value="weekdays"> Weekdays
+                <input type="checkbox" name="availability" value="weekends"> Weekends
+                <br>
+                <br>
+                <button type="submit">Sign Up as Volunteer</button>
+            </form>
+        </div>
+
+        <div class="right-column">
+
+        <div class="image-box">
+            <img src="signin.png" alt="Extinct">
+        </div>
+
+        <div class="feedback-box box">
+            <h2>FeedBack</h2>
+            <form>
+                <textarea name="feedback" rows="5" cols="30" placeholder="Your feedback or suggestions"></textarea>
+                <br>
+                <br>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+        <!--Footer-->
+        <div class="centerl">
+        <h2><b>Thank You!</b></h2>
+        <p>Your support is crucial in our efforts to protect endangered species.<br>Future is our responsibility</p>
+        </div>
+        <footer>
+        <small>&copy; 2025 Save Our Species. All rights reserved.</small>
+        </footer>
+        <script src="signin.js"></script>
+    </body>
+</html>

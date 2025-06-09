@@ -1,0 +1,146 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  color: #e0e4d7;
+  padding: 20px;
+  text-align: center;
+  background-color: #2f4222;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Filter Buttons */
+#filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#filter-buttons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #0f4912c7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#filter-buttons button.active,
+#filter-buttons button:hover {
+  background-color: #065f12d7;
+}
+
+/* Gallery Layout */
+#filterable-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h6 {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Hide Filtered Cards */
+.card.hide {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #filterable-cards {
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 1;
+  cursor: pointer; /* show pointer on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* make it 5% bigger */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* stronger shadow */
+  z-index: 10; /* bring it above others */
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000;');
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* makes background fixed when scrolling */
+  color: white; /* optional, to make text more readable */
+}
+#transition-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: white;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#transition-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}

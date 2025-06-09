@@ -1,0 +1,66 @@
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('Forest.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 5px;
+    color: #2c4426;
+  }
+
+  #faq-container {
+      max-width: 700px;
+      margin: auto;
+      background: #f3f1e9;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+      text-align: center;
+      color: #2c4426;
+      margin: 40px;
+  }
+
+
+
+  .faq-item {
+      border-radius: 12px;
+      background-color: #fffdf6;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #9bcf8b;
+      cursor: pointer;
+      transition: background 0.8s;
+  }
+
+  .faq-item h3 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.faq-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  color: #445c44;
+  margin-top: 5px;
+ display: block;
+ height: 0;
+}
+
+.faq-item.active .faq-item-content {
+  max-height: 1000px; 
+  height:auto
+}
+
+
+  a {
+    color: #337755;
+    text-decoration: underline;
+  }
+
+  .faq-item:hover {
+    background-color: #edf9ed;
+  }

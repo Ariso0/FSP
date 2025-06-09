@@ -1,0 +1,104 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f1e9;
+  color: #2f4222;
+}
+
+header {
+  color: #f3f1e9;
+  background-color: #2f4222;
+  padding-bottom: 5px;
+  text-align: center;
+  height: 100px;
+  top: 0px;
+  bottom: 100px;
+  position: relative;
+}
+
+header h1 {
+  margin: auto;
+  padding: 15px;
+  font-size: 2.5em;
+  background-color: #2f4222;
+}
+
+header p {
+  color: #2f4222;
+  margin-bottom: auto;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+main h2 {
+  color: #2f4222;
+  text-align: center;
+  margin: 5px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.team-member img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+  background-color: #2f4222;
+  color: #f3f1e9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+footer {
+  position: relative; 
+  height: 30px; 
+  padding: 20px;
+}
+
+footer small {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #2f4222;
+  text-align: center;
+  text-decoration-thickness: 3px;
+  padding: 5px;
+  display: block;
+  font-size: 14px;
+}
