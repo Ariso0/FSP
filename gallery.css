@@ -1,4 +1,4 @@
-/* Global Styles */
+
 *,
 *::before,
 *::after {
@@ -104,16 +104,16 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 1;
-  cursor: pointer; /* show pointer on hover */
+  cursor: pointer; 
 }
 
 .card:hover {
-  transform: scale(1.05); /* make it 5% bigger */
+  transform: scale(1.05); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* stronger shadow */
   z-index: 10; /* bring it above others */
 }
 .container {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
   border-radius: 10px;
   max-width: 1200px;
@@ -127,7 +127,7 @@ body {
   background-position: center; /* center the image */
   background-repeat: no-repeat;
   background-attachment: fixed; /* makes background fixed when scrolling */
-  color: white; /* optional, to make text more readable */
+  color: white; 
 }
 #transition-overlay {
   position: fixed;
